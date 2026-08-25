@@ -1,0 +1,32 @@
+{
+  "name": "agentic-commerce",
+  "version": "1.0.0",
+  "description": "Production-grade Stripe payment server with agent MPP support and human checkout flows",
+  "type": "module",
+  "main": "agentic-commerce.js",
+  "scripts": {
+    "start": "node agentic-commerce.js",
+    "dev": "node --watch agentic-commerce.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stripe",
+    "payments",
+    "mpp",
+    "402-challenge",
+    "checkout",
+    "commerce"
+  ],
+  "author": "Hunter Myers",
+  "license": "MIT",
+  "dependencies": {
+    "stripe": "^14.0.0",
+    "hono": "^4.0.0",
+    "@hono/node-server": "^1.3.0",
+    "mppx": "^1.0.0",
+    "zod": "^3.22.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
